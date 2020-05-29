@@ -1,4 +1,13 @@
-.{
-    background-color: lightgoldenrodyellow;
+
+*{
+    margin:0px;
+    padding:0px;
+    background-color:rgb(211, 216, 238);
     font: normal arial;
+}
+@media only screen and (max-width: 600px){
+    header img#logo{
+        max-width: 70%;
+    }
+    header{text-align: center;}
 }
