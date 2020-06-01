@@ -82,6 +82,15 @@
     grid-row-end:3 ;
 }
 }
+@media (min-width: 801px) and (max-width: 1000px){
+    .coluna2{display: none;}
+    .coluna1{
+        align-items: center;
+        text-align: center;
+        grid-row-start: 1;
+        grid-row-end:3 ;
+    }
+}
     @media (min-width: 601px) and (max-width: 1601px){
         div.caixa{
             display:none;
@@ -128,6 +137,7 @@
             border: 1px solid black;
             text-align: justify;
             margin-bottom: 20px;
+            padding: 5.78px;
         }
         
         .linha1 .coluna1 img{
@@ -159,6 +169,7 @@
             border: 1px solid black;
             padding: 10px;
             text-align: justify;
+            margin-bottom:20px ;
         }
         .Categorias h3{
             text-align: center;
@@ -166,4 +177,10 @@
         .Categorias p{
             line-height: 10px;
             text-decoration: underline;
+        }
+        .Abaixo{
+            margin: 10px;
+            border: 1px solid black;
+            padding: 10px;
+            text-align: justify;
         }
