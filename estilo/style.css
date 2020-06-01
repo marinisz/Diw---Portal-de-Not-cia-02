@@ -6,6 +6,8 @@
     font: normal arial;
 }
 @media only screen and (max-width: 600px){
+    div.caixa2{display: none;}
+    footer.quemsomos{display: none;}
     header img#logo{
         max-width: 70%;
     }
@@ -36,7 +38,7 @@
         border-bottom:3px darkblue;
     }
     .coluna1 img{
-        max-width: 90%;        
+        max-width: 60%;        
         border: 1px solid black;
     }
     .caixa{
@@ -44,6 +46,10 @@
     }
     .row{
         padding: 10px;
+    }
+    .linha1{
+        padding-bottom: 10px;
+        margin-bottom:10px ;
     }
     .linha3{
         padding-bottom: 10px;
@@ -66,5 +72,98 @@
         font-size: 23px;
         text-align: center;
     }
-    
-   
+}
+@media (min-width: 601px) and (max-width: 800px){
+.coluna2{display: none;}
+.coluna1{
+    align-items: center;
+    text-align: center;
+    grid-row-start: 1;
+    grid-row-end:3 ;
+}
+}
+    @media (min-width: 601px) and (max-width: 1601px){
+        div.caixa{
+            display:none;
+        }
+        
+        div.cabeçalho img#logo{
+            max-width: 15%;
+        }
+        }
+        header{
+            text-align: center;
+        }
+        #menu{
+            border-bottom: 2px solid black;
+        }
+        #menu ul {
+            padding:0px;
+            margin:0px;
+            background-color:#EDEDED;
+            list-style:none;
+        }
+        #menu ul li { display: inline; }
+        #menu ul li a {
+            padding: 2px 10px;
+            display: inline-block;
+            background-color:#EDEDED;
+            color: #333;
+            text-decoration: none;
+            border-bottom:3px solid #EDEDED;
+        }
+        #menu ul li a:hover {
+            background-color:#D6D6D6;
+            color: #6D6D6D;
+            border-bottom:3px darkblue;
+        }
+        .caixa2{
+            text-align: left;
+            display: grid;
+            grid-gap: 10px 10px;
+            padding: 10px;
+            margin:20px;
+        }
+        .coluna1 .div1{
+            border: 1px solid black;
+            text-align: justify;
+            margin-bottom: 20px;
+        }
+        
+        .linha1 .coluna1 img{
+            max-width: 30%;
+            float: left;
+            padding: 10px;
+            align-items: center;
+        }
+        .linha1 .coluna2{
+            border: 1px solid black;
+            margin-left: 10px;
+            height: 800px;
+        }
+
+        footer.quemsomos p{
+        background-color:  rgb(150, 150, 150);
+        text-align: center;
+        font-size: 15px;
+        }
+        footer.quemsomos h3{
+            background-color: rgb(150, 150, 150);
+        }
+        footer.quemsomos{
+        background-color:  rgb(150, 150, 150);
+        border: 1px black solid;
+        }
+        .Categorias{
+            margin: 10px;
+            border: 1px solid black;
+            padding: 10px;
+            text-align: justify;
+        }
+        .Categorias h3{
+            text-align: center;
+        }
+        .Categorias p{
+            line-height: 10px;
+            text-decoration: underline;
+        }
