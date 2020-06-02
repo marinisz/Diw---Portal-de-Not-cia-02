@@ -72,6 +72,24 @@
         font-size: 23px;
         text-align: center;
     }
+    .pesquisa #pesquisa{
+        border: none;
+        text-align: center;
+    }
+    .coluna1 #buscador{
+        height: 700px;
+    }
+    .coluna1 #buscador img{
+        max-width: 90%;
+    }
+    .noticinha{
+        height: 700px;
+        font-size: 20px;
+        text-align: justify;
+    }
+    span.titulo{
+        text-align: center;
+    }
 }
 @media (min-width: 601px) and (max-width: 800px){
 .coluna2{display: none;}
