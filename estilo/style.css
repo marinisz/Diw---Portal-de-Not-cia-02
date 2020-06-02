@@ -184,3 +184,38 @@
             padding: 10px;
             text-align: justify;
         }
+        span.titulo{
+            font-size: 30px;
+        }
+        span.credito{
+            color:lightseagreen;
+            font-size: 15px;
+        }
+        #buscador{
+            height: 250px;
+        }
+        #buscador img{
+            max-width: 20%;
+        }
+        #buscador{
+            padding: 15px;
+
+        }
+        input#txtPesquisa{
+            background-color: white;
+            margin-left:15px;
+            border-radius: 15px;
+        }
+        button#btnPesquisa{
+            padding: 5px;
+            margin-left: 5px;
+            background-color: lightslategray;
+            border-radius: 15px;
+            
+        }
+        #buscador{
+            text-align: justify;
+            margin-bottom: 20px;
+            padding: 2px;
+
+        }

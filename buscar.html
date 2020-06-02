@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="estilo/style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
         integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <title>BH - News</title>
+    <title>Buscar Notícias</title>
 </head>
 
 <body>
@@ -51,14 +51,18 @@
         </div>
         <!--maior que 600-->
         <div class="container caixa2">
+
+            <div class="row linha1 pesquisa">
+                <input type="txt" id="txtPesquisa"><button id="btnPesquisa" onclick="executaPesquisa()">Buscar tema</button>
+            </div>
             <div class="row linha1">
-                <div class="col-8 coluna1">
-                    <div class="div1">
-                        <div class="noticia1">
+                <div class="col coluna1">
+                        <div id="buscador">
+                            <div class="div1">
                             <img src="imagens/logo.jpg" alt="">
                             <span class="titulo">Titulo da noticia</span><br>
                             <span class="credito"> BBC - 01/05/2020</span><br>
-                            <span class="texto">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum,
+                            <span class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum,
                                 dolor sit amet consectetur adipisicing elit. Architecto enim, error minima
                                 necessitatibus explicabo suscipit quidem eveniet voluptatem quaerat, et optio animi, eum
                                 perferendis laboriosam deserunt unde cum omnis vitae dignissimos obcaecati sunt corrupti
@@ -67,49 +71,8 @@
                                 eligendi distinctio animi dolorum numquam iste at, molestias quam corrupti magni!
                                 Placeat, doloremque ab! In error beatae, harum sit aperiam optio similique consequuntur
                                 necessitatibus accusantium praesentium!</span>
+                            </div>
                         </div>
-                    </div>
-                    <div class="div1">
-                        <img src="imagens/logo.jpg" alt="">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse debitis consequuntur illum non
-                        maxime, perspiciatis reprehenderit eum quaerat molestias velit fuga odit similique dignissimos
-                        minima odio culpa iusto hic id possimus sed numquam voluptate! Debitis vero sed modi nobis quas
-                        autem, aut dignissimos veniam. Impedit quis laudantium recusandae repellat culpa quaerat at
-                        accusantium facere, est voluptas eum perspiciatis doloribus facilis natus itaque dolorum
-                        deserunt quod ipsa deleniti voluptate neque nesciunt ipsam iusto? Nobis a incidunt, iusto
-                        similique atque minima ab quo nulla quas
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut doloribus, quo harum
-                    </div>
-                    <div class="div1">
-                        <img src="imagens/logo.jpg" alt="">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse debitis consequuntur illum non
-                        maxime, perspiciatis reprehenderit eum quaerat molestias velit fuga odit similique dignissimos
-                        minima odio culpa iusto hic id possimus sed numquam voluptate! Debitis vero sed modi nobis quas
-                        autem, aut dignissimos veniam. Impedit quis laudantium recusandae repellat culpa quaerat at
-                        accusantium facere, est voluptas eum perspiciatis doloribus facilis natus itaque dolorum
-                        deserunt quod ipsa deleniti voluptate neque nesciunt ipsam iusto? Nobis a incidunt, iusto
-                        similique atque minima ab quo nulla quas
-                        Lorem, ipsum Lorem ipsum dolor sit amet.
-                    </div>
-                </div>
-                <div class="col coluna2">
-                    <div class="Categorias">
-                        <h3>Categorias</h3>
-                        <p>Seção 1</p>
-                        <p>Seção 2</p>
-                        <p>Seção 3</p>
-                    </div>
-                    <div class="Abaixo">
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste, excepturi. Incidunt velit minus
-                        id sunt. Facilis ex ipsam excepturi aut ad quam quis et tempora eveniet vitae animi consequuntur
-                        qui, ab quidem temporibus, consequatur aspernatur quas nulla. Necessitatibus fugiat voluptates
-                        consequuntur veniam atque voluptatibus ipsum. Aliquam modi fugiat expedita numquam cupiditate
-                        dolorum voluptate ex. Quae numquam aperiam repellendus dolorum unde, ea in adipisci, porro magni
-                        nobis labore? Laborum exercitationem repellat quae ullam fuga accusamus laboriosam ea earum,
-                        repudiandae voluptatibus alias, eaque sequi totam! Nam optio ad doloremque commodi labore rem
-                        corporis, repellendus odit fugit? Aspernatur officia vero, explicabo beatae reiciendis
-                        repellendus officiis itaque minus earum, maxime cupiditate soluta illo quos! Porro id adipisci
-                        maiores sequi doloremque, neque mollitia labore
                     </div>
                 </div>
             </div>
@@ -125,9 +88,6 @@
 
         </script>
     </header>
-
-
-
 
 
 
