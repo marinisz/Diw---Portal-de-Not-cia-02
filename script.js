@@ -32,7 +32,7 @@ function executaPesquisa() {
 
     let xhr = new XMLHttpRequest();
     xhr.onload = exibeNoticias;
-    xhr.open('GET', `https://newsapi.org/v2/everything?q=${query}&apiKey=ff42562d3e064cc689c7bf1600919125`);
+    xhr.open('GET', `https://newsapi.org/v2/everything?q=${query}&apiKey=${API_KEY}`);
     xhr.send();
 }
 
