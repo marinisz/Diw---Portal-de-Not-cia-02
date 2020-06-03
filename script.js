@@ -28,11 +28,15 @@ function exibeNoticias() {
 
 
 function executaPesquisa() {
-    let query = document.getElementById('txtPesquisa').value;
-
-    let xhr = new XMLHttpRequest();
+    var pesquisa = document.querySelector('input#txtPesquisa').value;
+    let xhr;
+    if(window.XMLHttpRequest){
+        xhr = new XMLHttpRequest;
+    }else{
+        xhr = new ActiveXObject("Microsoft.XMLHTTP")
+    };
     xhr.onload = exibeNoticias;
-    xhr.open('GET', `https://newsapi.org/v2/everything?q=${query}&apiKey=${API_KEY}`);
+    xhr.open('GET', `https://newsapi.org/v2/everything?q=${pesquisa}&apiKey=${API_KEY}`);
     xhr.send();
 }
 
