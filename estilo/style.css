@@ -6,6 +6,16 @@
 }
 
 @media only screen and (max-width: 600px) {
+    .covid{
+        border: 1px solid black;
+        margin: 20px;
+        text-align: center;
+    }
+    .covid img{
+        max-width:80%;
+        margin: 5px;
+        border: 1px solid black;
+    }
     div.caixa2 {
         display: none;
     }
@@ -49,9 +59,11 @@
     }
     .caixa {
         border: 1px solid black;
+        text-align: center;
     }
     .row {
         padding: 10px;
+        text-align: center;
     }
     .linha1 {
         padding-bottom: 10px;
@@ -71,7 +83,7 @@
     }
     .linha4 .coluna1 p {
         background-color: rgb(150, 150, 150);
-        text-align: justify;
+        text-align: center;
     }
     .linha4 .coluna1 p#QuemSomos {
         background-color: rgb(150, 150, 150);
@@ -84,14 +96,16 @@
     }
     .coluna1 #buscador {
         height: 700px;
+        text-align: center;
     }
     .coluna1 #buscador img {
         max-width: 90%;
+        text-align: center;
     }
     .noticinha {
         height: 700px;
         font-size: 20px;
-        text-align: justify;
+        text-align: center;
     }
     span.titulo {
         text-align: center;
