@@ -1,3 +1,4 @@
+
 var API_KEY = 'ff42562d3e064cc689c7bf1600919125'
 function exibeNoticias() {
     let diviTela = document.querySelector('div#buscador')
@@ -41,3 +42,4 @@ function executaPesquisa() {
 }
 
 document.getElementById('btnPesquisa').addEventListener('click', executaPesquisa);
+

@@ -6,6 +6,7 @@
     font: normal arial;
 }
 @media only screen and (max-width: 600px){
+    
     div.caixa2{display: none;}
     footer.quemsomos{display: none;}
     header img#logo{
@@ -236,4 +237,7 @@
             margin-bottom: 20px;
             padding: 2px;
 
+        }
+        div.div1.covid img{
+            max-width: 20%;
         }
