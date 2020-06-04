@@ -1,243 +1,295 @@
-
-*{
-    margin:0px;
-    padding:0px;
-    background-color:rgb(211, 216, 238);
+* {
+    margin: 0px;
+    padding: 0px;
+    background-color: rgb(211, 216, 238);
     font: normal arial;
 }
-@media only screen and (max-width: 600px){
-    
-    div.caixa2{display: none;}
-    footer.quemsomos{display: none;}
-    header img#logo{
+
+@media only screen and (max-width: 600px) {
+    div.caixa2 {
+        display: none;
+    }
+    footer.quemsomos {
+        display: none;
+    }
+    header img#logo {
         max-width: 70%;
     }
-    header{
+    header {
         text-align: center;
     }
-    #menu{
+    #menu {
         border-bottom: 2px solid black;
     }
     #menu ul {
-        padding:0px;
-        margin:0px;
-        background-color:#EDEDED;
-        list-style:none;
+        padding: 0px;
+        margin: 0px;
+        background-color: #EDEDED;
+        list-style: none;
     }
-    #menu ul li { display: inline; }
+    #menu ul li {
+        display: inline;
+    }
     #menu ul li a {
         padding: 2px 10px;
         display: inline-block;
-        background-color:#EDEDED;
+        background-color: #EDEDED;
         color: #333;
         text-decoration: none;
-        border-bottom:3px solid #EDEDED;
+        border-bottom: 3px solid #EDEDED;
     }
     #menu ul li a:hover {
-        background-color:#D6D6D6;
+        background-color: #D6D6D6;
         color: #6D6D6D;
-        border-bottom:3px darkblue;
+        border-bottom: 3px darkblue;
     }
-    .coluna1 img{
-        max-width: 60%;        
+    .coluna1 img {
+        max-width: 60%;
         border: 1px solid black;
     }
-    .caixa{
+    .caixa {
         border: 1px solid black;
     }
-    .row{
+    .row {
         padding: 10px;
     }
-    .linha1{
+    .linha1 {
         padding-bottom: 10px;
-        margin-bottom:10px ;
+        margin-bottom: 10px;
     }
-    .linha3{
+    .linha3 {
         padding-bottom: 10px;
-        margin-bottom:10px ;
+        margin-bottom: 10px;
     }
-    .linha4{
-        border-top:1px solid black;
+    .linha4 {
+        border-top: 1px solid black;
         padding-top: 10px;
         background-color: rgb(150, 150, 150);
     }
-    .linha4 .coluna1{
-        background-color:  rgb(150, 150, 150);
+    .linha4 .coluna1 {
+        background-color: rgb(150, 150, 150);
     }
-    .linha4 .coluna1 p{
-        background-color:  rgb(150, 150, 150);
+    .linha4 .coluna1 p {
+        background-color: rgb(150, 150, 150);
         text-align: justify;
     }
-    .linha4 .coluna1 p#QuemSomos{
-        background-color:  rgb(150, 150, 150);
+    .linha4 .coluna1 p#QuemSomos {
+        background-color: rgb(150, 150, 150);
         font-size: 23px;
         text-align: center;
     }
-    .pesquisa #pesquisa{
+    .pesquisa #pesquisa {
         border: none;
         text-align: center;
     }
-    .coluna1 #buscador{
+    .coluna1 #buscador {
         height: 700px;
     }
-    .coluna1 #buscador img{
+    .coluna1 #buscador img {
         max-width: 90%;
     }
-    .noticinha{
+    .noticinha {
         height: 700px;
         font-size: 20px;
         text-align: justify;
     }
-    span.titulo{
+    span.titulo {
         text-align: center;
     }
+    div.noticia1 {
+        border: 1px solid black;
+    }
+    div.noticia1 img {
+        max-width: 60%;
+    }
 }
-@media (min-width: 601px) and (max-width: 800px){
-.coluna2{display: none;}
-.coluna1{
-    align-items: center;
-    text-align: center;
-    grid-row-start: 1;
-    grid-row-end:3 ;
-}
-}
-@media (min-width: 801px) and (max-width: 1000px){
-    .coluna2{display: none;}
-    .coluna1{
+
+@media (min-width: 601px) and (max-width: 800px) {
+    .coluna2 {
+        display: none;
+    }
+    .coluna1 {
         align-items: center;
         text-align: center;
         grid-row-start: 1;
-        grid-row-end:3 ;
+        grid-row-end: 3;
     }
 }
-    @media (min-width: 601px) and (max-width: 1601px){
-        div.caixa{
-            display:none;
-        }
-        
-        div.cabeçalho img#logo{
-            max-width: 15%;
-        }
-        }
-        header{
-            text-align: center;
-        }
-        #menu{
-            border-bottom: 2px solid black;
-        }
-        #menu ul {
-            padding:0px;
-            margin:0px;
-            background-color:#EDEDED;
-            list-style:none;
-        }
-        #menu ul li { display: inline; }
-        #menu ul li a {
-            padding: 2px 10px;
-            display: inline-block;
-            background-color:#EDEDED;
-            color: #333;
-            text-decoration: none;
-            border-bottom:3px solid #EDEDED;
-        }
-        #menu ul li a:hover {
-            background-color:#D6D6D6;
-            color: #6D6D6D;
-            border-bottom:3px darkblue;
-        }
-        .caixa2{
-            text-align: left;
-            display: grid;
-            grid-gap: 10px 10px;
-            padding: 10px;
-            margin:20px;
-        }
-        .coluna1 .div1{
-            border: 1px solid black;
-            text-align: justify;
-            margin-bottom: 20px;
-            padding: 5.78px;
-        }
-        
-        .linha1 .coluna1 img{
-            max-width: 30%;
-            float: left;
-            padding: 10px;
-            align-items: center;
-        }
-        .linha1 .coluna2{
-            border: 1px solid black;
-            margin-left: 10px;
-            height: 800px;
-        }
 
-        footer.quemsomos p{
-        background-color:  rgb(150, 150, 150);
+@media (min-width: 801px) and (max-width: 1000px) {
+    .coluna2 {
+        display: none;
+    }
+    .coluna1 {
+        align-items: center;
         text-align: center;
-        font-size: 15px;
-        }
-        footer.quemsomos h3{
-            background-color: rgb(150, 150, 150);
-        }
-        footer.quemsomos{
-        background-color:  rgb(150, 150, 150);
-        border: 1px black solid;
-        }
-        .Categorias{
-            margin: 10px;
-            border: 1px solid black;
-            padding: 10px;
-            text-align: justify;
-            margin-bottom:20px ;
-        }
-        .Categorias h3{
-            text-align: center;
-        }
-        .Categorias p{
-            line-height: 10px;
-            text-decoration: underline;
-        }
-        .Abaixo{
-            margin: 10px;
-            border: 1px solid black;
-            padding: 10px;
-            text-align: justify;
-        }
-        span.titulo{
-            font-size: 30px;
-        }
-        span.credito{
-            color:lightseagreen;
-            font-size: 15px;
-        }
-        #buscador{
-            height: 250px;
-        }
-        #buscador img{
-            max-width: 20%;
-        }
-        #buscador{
-            padding: 15px;
+        grid-row-start: 1;
+        grid-row-end: 3;
+    }
+}
 
-        }
-        input#txtPesquisa{
-            background-color: white;
-            margin-left:15px;
-            border-radius: 15px;
-        }
-        button#btnPesquisa{
-            padding: 5px;
-            margin-left: 5px;
-            background-color: lightslategray;
-            border-radius: 15px;
-            
-        }
-        #buscador{
-            text-align: justify;
-            margin-bottom: 20px;
-            padding: 2px;
+@media (min-width: 1001px) and (max-width: 1601px) {
+    div.caixa {
+        display: none;
+    }
+    div.cabeçalho img#logo {
+        max-width: 15%;
+    }
+}
 
-        }
-        div.div1.covid img{
-            max-width: 20%;
-        }
+header {
+    text-align: center;
+}
+
+#menu {
+    border-bottom: 2px solid black;
+}
+
+#menu ul {
+    padding: 0px;
+    margin: 0px;
+    background-color: #EDEDED;
+    list-style: none;
+}
+
+#menu ul li {
+    display: inline;
+}
+
+#menu ul li a {
+    padding: 2px 10px;
+    display: inline-block;
+    background-color: #EDEDED;
+    color: #333;
+    text-decoration: none;
+    border-bottom: 3px solid #EDEDED;
+}
+
+#menu ul li a:hover {
+    background-color: #D6D6D6;
+    color: #6D6D6D;
+    border-bottom: 3px darkblue;
+}
+
+.caixa2 {
+    text-align: left;
+    display: grid;
+    grid-gap: 10px 10px;
+    padding: 10px;
+    margin: 20px;
+}
+
+.coluna1 .div1 {
+    border: 1px solid black;
+    text-align: justify;
+    margin-bottom: 20px;
+    padding: 5.78px;
+}
+
+.linha1 .coluna1 img {
+    max-width: 30%;
+    float: left;
+    padding: 10px;
+    align-items: center;
+}
+
+.linha1 .coluna2 {
+    border: 1px solid black;
+    margin-left: 10px;
+    height: 800px;
+}
+
+footer.quemsomos p {
+    background-color: rgb(150, 150, 150);
+    text-align: center;
+    font-size: 15px;
+}
+
+footer.quemsomos h3 {
+    background-color: rgb(150, 150, 150);
+}
+
+footer.quemsomos {
+    background-color: rgb(150, 150, 150);
+    border: 1px black solid;
+}
+
+.Categorias {
+    margin: 10px;
+    border: 1px solid black;
+    padding: 10px;
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+.Categorias h3 {
+    text-align: center;
+}
+
+.Categorias p {
+    line-height: 10px;
+    text-decoration: underline;
+}
+
+.Abaixo {
+    margin: 10px;
+    border: 1px solid black;
+    padding: 10px;
+    text-align: justify;
+}
+
+span.titulo {
+    font-size: 30px;
+}
+
+span.credito {
+    color: lightseagreen;
+    font-size: 15px;
+}
+
+#buscador {
+    height: 250px;
+}
+
+#buscador img {
+    max-width: 20%;
+}
+
+#buscador {
+    padding: 15px;
+}
+
+input#txtPesquisa {
+    background-color: white;
+    margin-left: 15px;
+    border-radius: 15px;
+}
+
+button#btnPesquisa {
+    padding: 5px;
+    margin-left: 5px;
+    background-color: lightslategray;
+    border-radius: 15px;
+}
+
+#buscador {
+    text-align: justify;
+    margin-bottom: 20px;
+    padding: 2px;
+}
+
+footer p {
+    background-color: rgb(150, 150, 150);
+    text-align: center;
+    font-size: 15px;
+}
+
+footer h3 {
+    background-color: rgb(150, 150, 150);
+}
+
+footer {
+    background-color: rgb(150, 150, 150);
+    border: 1px black solid;
+    margin-top: 200px;
+}
