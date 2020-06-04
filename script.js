@@ -1,6 +1,6 @@
 var API_KEY = 'ff42562d3e064cc689c7bf1600919125'
 function exibeNoticias() {
-    let diviTela = document.getElementById('buscador')
+    let diviTela = document.querySelector('div#buscador')
     let texto = ' '
 
     //montar o texto
@@ -29,7 +29,7 @@ function exibeNoticias() {
 
 function executaPesquisa() {
     var pesquisa = document.querySelector('input#txtPesquisa').value;
-    let xhr;
+    var xhr;
     if(window.XMLHttpRequest){
         xhr = new XMLHttpRequest;
     }else{
