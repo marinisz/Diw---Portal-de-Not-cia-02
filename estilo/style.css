@@ -4,22 +4,32 @@
     background-color: rgb(211, 216, 238);
     font: normal arial;
 }
-
+.Categorias a{
+    color:black;
+}
+div.Abaixo img{
+    max-width: 1000%;
+}
 @media only screen and (max-width: 600px) {
-    .covid{
-        border: 1px solid black;
-        margin: 20px;
+    footer p {
+        background-color: rgb(150, 150, 150);
         text-align: center;
+        font-size: 15px;
     }
-    .covid img{
-        max-width:80%;
-        margin: 5px;
-        border: 1px solid black;
+    
+    footer h3 {
+        background-color: rgb(150, 150, 150);
     }
-    div.caixa2 {
+    
+    footer {
+        background-color: rgb(150, 150, 150);
+        border: 1px black solid;
+        margin-top: 200px;
+    }
+    .Abaixo{
         display: none;
     }
-    footer.quemsomos {
+    .Categorias{
         display: none;
     }
     header img#logo {
@@ -30,6 +40,8 @@
     }
     #menu {
         border-bottom: 2px solid black;
+        width: 100%;
+        font-size: 13px;
     }
     #menu ul {
         padding: 0px;
@@ -57,10 +69,6 @@
         max-width: 60%;
         border: 1px solid black;
     }
-    .caixa {
-        border: 1px solid black;
-        text-align: center;
-    }
     .row {
         padding: 10px;
         text-align: center;
@@ -68,39 +76,13 @@
     .linha1 {
         padding-bottom: 10px;
         margin-bottom: 10px;
+        border: 1px solid black;
     }
-    .linha3 {
-        padding-bottom: 10px;
-        margin-bottom: 10px;
-    }
-    .linha4 {
-        border-top: 1px solid black;
-        padding-top: 10px;
-        background-color: rgb(150, 150, 150);
-    }
-    .linha4 .coluna1 {
-        background-color: rgb(150, 150, 150);
-    }
-    .linha4 .coluna1 p {
-        background-color: rgb(150, 150, 150);
-        text-align: center;
-    }
-    .linha4 .coluna1 p#QuemSomos {
-        background-color: rgb(150, 150, 150);
-        font-size: 23px;
-        text-align: center;
-    }
-    .pesquisa #pesquisa {
-        border: none;
-        text-align: center;
-    }
-    .coluna1 #buscador {
-        height: 700px;
-        text-align: center;
-    }
-    .coluna1 #buscador img {
-        max-width: 90%;
-        text-align: center;
+    .noticiai{
+        padding: 10px;
+        padding-bottom: 20px;
+        margin-bottom: 15px;
+        border: 1px solid black;
     }
     .noticinha {
         height: 700px;
@@ -119,6 +101,9 @@
 }
 
 @media (min-width: 601px) and (max-width: 800px) {
+    .Categorias{
+        display: none;
+    }
     .coluna2 {
         display: none;
     }
@@ -143,14 +128,27 @@
 }
 
 @media (min-width: 1001px) and (max-width: 1601px) {
+    div.noticiai{
+        padding: 20px;
+        border: 1px solid black;
+        margin: 15px;
+    }
     div.caixa {
         display: none;
     }
     div.cabeçalho img#logo {
         max-width: 15%;
     }
-}
-
+    span.text{
+        text-align: justify;
+    }
+    span.titulo{
+        font-size: 10px;
+    }
+    span.creditos{
+        color: red;
+        font-size: 15px;
+    }
 header {
     text-align: center;
 }
@@ -229,7 +227,6 @@ footer.quemsomos {
 }
 
 .Categorias {
-    margin: 10px;
     border: 1px solid black;
     padding: 10px;
     text-align: justify;
@@ -246,8 +243,6 @@ footer.quemsomos {
 }
 
 .Abaixo {
-    margin: 10px;
-    border: 1px solid black;
     padding: 10px;
     text-align: justify;
 }
@@ -306,4 +301,5 @@ footer {
     background-color: rgb(150, 150, 150);
     border: 1px black solid;
     margin-top: 200px;
+}
 }

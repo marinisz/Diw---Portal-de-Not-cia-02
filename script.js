@@ -1,45 +1,86 @@
 
-var API_KEY = 'ff42562d3e064cc689c7bf1600919125'
-function exibeNoticias() {
-    let diviTela = document.querySelector('div#buscador')
-    let texto = ' '
-
-    //montar o texto
-
-    let dados = JSON.parse(this.responseText);
-    for (i = 0; i < dados.articles.lenght; i++) {
-        let noticia = dados.articles[i];
-        let data = new Date(noticia.publishedAt);
-        texto = texto + `
-            <div class="div1">
-                <img src="${noticia.urlToImage}" alt="">
-                <span class="titulo">${noticia.title}</span><br>
-                <span class="creditos">${data.toLocaleDateString()} - 
-                    ${noticia.source.name} - 
-                    ${noticia.author}</span><br>
-                <span class="text">
-                ${noticia.content} <a href="${noticia.url}">Leia mais ...</a>
-                </span>
-            </div>            
-        `;
-    };
-    //preencher
-    diviTela.innerHTML = texto;
+var tela = document.querySelector('div#tela');
+function funcionaPesquisa(){
+        var pega;
+        if (window.XMLHttpRequest) {
+            pega = new XMLHttpRequest;
+        } else {
+            pega = new ActiveXObject("Microsoft.XMLHTTP");
+        }
+        //let tela = document.querySelector('div#tela');
+        pega.open('GET', 'https://newsapi.org/v2/everything?q=belo-horizonte&apiKey=ff42562d3e064cc689c7bf1600919125');
+        pega.onload = function () {
+            if (pega.status>= 200 && pega.status <400){
+            var ourdata = JSON.parse(pega.responseText);
+            geradado(ourdata);
+            }else{
+                console.log("We connected but it returned an error")
+            }
+        }
+        pega.onerror = function(){
+            console.log("Connection error");
+        }
+        pega.send()
 }
-
-
-function executaPesquisa() {
-    var pesquisa = document.querySelector('input#txtPesquisa').value;
-    var xhr;
-    if(window.XMLHttpRequest){
-        xhr = new XMLHttpRequest;
-    }else{
-        xhr = new ActiveXObject("Microsoft.XMLHTTP")
-    };
-    xhr.onload = exibeNoticias;
-    xhr.open('GET', `https://newsapi.org/v2/everything?q=${pesquisa}&apiKey=${API_KEY}`);
-    xhr.send();
+function funcionaPesquisa2(){
+    var pega;
+    if (window.XMLHttpRequest) {
+        pega = new XMLHttpRequest;
+    } else {
+        pega = new ActiveXObject("Microsoft.XMLHTTP");
+    }
+    //let tela = document.querySelector('div#tela');
+    pega.open('GET', 'https://newsapi.org/v2/everything?q=ultimas-noticias-brasil&apiKey=ff42562d3e064cc689c7bf1600919125');
+    pega.onload = function () {
+        if (pega.status>= 200 && pega.status <400){
+        var ourdata = JSON.parse(pega.responseText);
+        geradado(ourdata);
+        }else{
+            console.log("We connected but it returned an error")
+        }
+    }
+    pega.onerror = function(){
+        console.log("Connection error");
+    }
+    pega.send()
 }
-
-document.getElementById('btnPesquisa').addEventListener('click', executaPesquisa);
-
+function funcionaPesquisa3(){
+    var pega;
+    if (window.XMLHttpRequest) {
+        pega = new XMLHttpRequest;
+    } else {
+        pega = new ActiveXObject("Microsoft.XMLHTTP");
+    }
+    //let tela = document.querySelector('div#tela');
+    pega.open('GET', 'https://newsapi.org/v2/everything?q=covid-no-brasil&apiKey=ff42562d3e064cc689c7bf1600919125');
+    pega.onload = function () {
+        if (pega.status>= 200 && pega.status <400){
+        var ourdata = JSON.parse(pega.responseText);
+        geradado(ourdata);
+        }else{
+            console.log("We connected but it returned an error")
+        }
+    }
+    pega.onerror = function(){
+        console.log("Connection error");
+    }
+    pega.send()
+}
+function geradado(data){
+    tela.innerHTML=" ";
+    for(i=0;i<3;i++){
+        var htmlString = data.articles[i];
+        var date = new Date(htmlString.publishedAt);
+        tela.innerHTML+=`<div class="noticiai">
+            <img src="${htmlString.urlToImage}" alt="">
+            <br>
+            <span class="titulo"><strong>${htmlString.title}</strong></span><br>
+            <span class="creditos"><i>${date.toLocaleDateString()} - 
+            ${htmlString.source.name} - 
+            ${htmlString.author}</i></span><br>
+            <span class="text">
+            ${htmlString.content} <a href="${htmlString.url}">Leia mais ...</a>
+            </span>
+        </div>`;
+    }
+}
