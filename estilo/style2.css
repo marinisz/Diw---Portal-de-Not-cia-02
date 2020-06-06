@@ -4,6 +4,21 @@
     background-color: rgb(211, 216, 238);
     font: normal arial;
 }
+footer p {
+    background-color: rgb(150, 150, 150);
+    text-align: center;
+    font-size: 15px;
+}
+
+footer h3 {
+    background-color: rgb(150, 150, 150);
+}
+
+footer {
+    background-color: rgb(150, 150, 150);
+    border: 1px black solid;
+    margin-top: 200px;
+}
 input#txtPesquisa{
     background-color: white;
     border-radius: 15px;
@@ -144,4 +159,19 @@ header {
     span.text{
         font-size: 13px;
     }
+}
+footer p {
+    background-color: rgb(150, 150, 150);
+    text-align: center;
+    font-size: 15px;
+}
+
+footer h3 {
+    background-color: rgb(150, 150, 150);
+}
+
+footer {
+    background-color: rgb(150, 150, 150);
+    border: 1px black solid;
+    margin-top: 200px;
 }
